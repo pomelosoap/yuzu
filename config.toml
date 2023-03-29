@@ -1,3 +1,22 @@
 baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'ja-JP'
+defaultContentLanguage = 'ja'
+defaultContentLang = 'ja'
+title = 'Yuzu Daily'
+theme = 'archie'
+copyright = '© Yuzu Daily'
+
+[taxonomies]
+  tag = 'tags'
+
+[params]
+    mode="auto" # color-mode → light,dark,toggle or auto
+	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+	subtitle = "Read articles everyday"
+	mathjax = true # enable MathJax support
+	katex = true # enable KaTeX support
+
+[[menu.main]]
+name = "All"
+url = "/issues"
+weight = 2
